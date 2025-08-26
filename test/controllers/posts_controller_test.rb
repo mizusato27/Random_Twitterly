@@ -2,12 +2,14 @@ require "test_helper"
 
 class PostsControllerTest < ActionDispatch::IntegrationTest
   test "should get index" do
-    get posts_index_url
+    get posts_url
     assert_response :success
   end
 
-  test "should get create" do
-    get posts_create_url
-    assert_response :success
+  test "should post create" do
+    assert_difference('Post.count', 1) do
+      post posts_url, params: { post: { content: "テスト投稿", theme_id: themes(:one).id } }
+    end
+    assert_redirected_to root_url
   end
 end
