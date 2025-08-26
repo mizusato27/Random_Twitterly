@@ -8,3 +8,23 @@
   </h2>
   <%= link_to "別のお題に変える", themes_random_path %>
 </section>
+
+<section>
+  <%= form_with model: Post.new, local: true do |form| %>
+    <div>
+      <%= form.text_area :content, rows: 3 %>
+    </div>
+    <%= form.hidden_field :theme_id, value: @theme.id %>
+    <div>
+      <%= form.submit "投稿する" %>
+    </div>
+  <% end %>
+</section>
+
+<section>
+  <% @posts.each do |post| %>
+    <div>
+      <%= text_area_tag nil, post.content, rows: 3, readonly: true %>
+    </div>
+  <% end %>
+</section>
