@@ -22,7 +22,7 @@ gem 'solid_queue'
 
 gem 'bootsnap', require: false
 
-gem 'bcrypt', '3.1.18'
+gem 'bcrypt', '3.1.20'
 
 gem 'faker', '2.21.0'
 
