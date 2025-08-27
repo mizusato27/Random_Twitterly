@@ -24,7 +24,7 @@ gem 'bootsnap', require: false
 
 gem 'bcrypt', '3.1.18'
 
-gem 'faker', '2.21.0'
+gem 'faker', '3.5.2'
 
 gem "dartsass-rails"
 gem "bootstrap", "~> 5.3.3"
