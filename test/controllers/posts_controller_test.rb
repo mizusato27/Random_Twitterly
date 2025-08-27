@@ -12,4 +12,5 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
     end
     assert_redirected_to root_url
   end
+  # [todo] posts_spec.rb で書いてみる
 end
