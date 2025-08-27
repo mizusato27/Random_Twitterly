@@ -5,7 +5,7 @@ gem 'rails', '~> 8.0.2', '>= 8.0.2.1'
 
 gem 'image_processing', '1.12.2'
 
-gem 'active_storage_validations', '0.9.8'
+gem 'active_storage_validations', '3.0.1'
 gem 'propshaft'
 gem 'sqlite3', '>= 2.1'
 gem 'puma', '>= 5.0'
