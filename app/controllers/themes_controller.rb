@@ -5,7 +5,7 @@ class ThemesController < ApplicationController
   end
 
   def random
-    @theme = Theme.order("RANDOM()").first
+    @theme = Theme.order('RANDOM()').first
     session[:current_theme_id] = @theme.id # セッションに保存
     redirect_to root_path
   end
