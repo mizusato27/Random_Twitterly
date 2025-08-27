@@ -41,7 +41,7 @@ group :development, :test do
   gem 'debug', platforms: %i[mri windows], require: 'debug/prelude'
   gem 'guard', '~> 2.18.0'            # 追加(3.6)
   gem 'guard-minitest', '~> 2.4.6'    # 追加(3.6)
-  gem 'minitest-reporters', '~> 1.6.0' # 追加(3.6)
+  gem 'minitest-reporters', '~> 1.7.1' # 追加(3.6)
   gem 'brakeman', require: false
   # gem "rubocop-rails-omakase", require: false
   gem 'sgcop', github: 'SonicGarden/sgcop', branch: 'main'
