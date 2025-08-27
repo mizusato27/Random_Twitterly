@@ -1,2 +1,33 @@
-<h1>Posts#index</h1>
-<p>Find me in app/views/posts/index.html.erb</p>
+<header class="bg-info text-white py-3 mb-4">
+  <div class="container">
+    <h1 class="mb-0">Random Twitterly</h1>
+  </div>
+</header>
+
+<div class="container">
+  <section class="mb-4">
+    <div class="d-flex justify-content-between align-items-center">
+      <h2 class="mb-0"><%= @theme.title %></h2>
+      <%= link_to "別のお題に変える", themes_random_path, class: "btn btn-outline-secondary" %>
+    </div>
+  </section>
+
+  <section class="mb-4">
+    <%= form_with model: [@theme, Post.new], local: true, class: "w-100" do |form| %>
+      <div class="mb-3">
+        <%= form.text_area :content, rows: 3, class: "form-control", style: "resize: vertical; width: 100%;" %>
+      </div>
+      <div>
+        <%= form.submit "投稿する", class: "btn btn-primary" %>
+      </div>
+    <% end %>
+  </section>
+
+  <section>
+    <% @posts.each do |post| %>
+      <div class="mb-3">
+        <%= text_area_tag nil, post.content, rows: 3, readonly: true, class: "form-control", style: "resize: none; width: 100%;" %>
+      </div>
+    <% end %>
+  </section>
+</div>
