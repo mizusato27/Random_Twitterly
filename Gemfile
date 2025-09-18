@@ -53,20 +53,17 @@ gem "thruster", require: false
 # gem "image_processing", "~> 1.2"
 
 group :development, :test do
-  # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
 
-  gem "guard", "~> 2.18.0"            # 追加(3.6)
+  gem "guard", "~> 2.18.0"
+  gem "guard-minitest", "~> 2.4.6"
+  gem "minitest-reporters", "~> 1.6.0"
 
-  gem "guard-minitest", "~> 2.4.6"    # 追加(3.6)
-
-  gem "minitest-reporters", "~> 1.6.0" # 追加(3.6)
-
-  # Static analysis for security vulnerabilities [https://brakemanscanner.org/]
   gem "brakeman", require: false
 
-  # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
+
+  gem "rspec-rails"
 end
 
 group :development do
