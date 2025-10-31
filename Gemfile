@@ -3,7 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 gem 'rails', '~> 8.0.2', '>= 8.0.2.1'
 
-gem 'image_processing', '1.12.2'
+gem 'image_processing', '1.14.0'
 
 gem 'active_storage_validations', '0.9.8'
 gem 'propshaft'
