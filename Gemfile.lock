@@ -146,7 +146,7 @@ GEM
     factory_bot_rails (6.5.0)
       factory_bot (~> 6.5)
       railties (>= 6.1.0)
-    faker (2.21.0)
+    faker (3.5.2)
       i18n (>= 1.8.11, < 2)
     ffi (1.17.2-aarch64-linux-gnu)
     ffi (1.17.2-aarch64-linux-musl)
@@ -541,7 +541,7 @@ DEPENDENCIES
   dartsass-rails
   debug
   factory_bot_rails
-  faker (= 2.21.0)
+  faker (= 3.5.2)
   guard (~> 2.18.0)
   guard-minitest (~> 2.4.6)
   image_processing (= 1.12.2)
