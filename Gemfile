@@ -39,7 +39,7 @@ gem 'thruster', require: false
 
 group :development, :test do
   gem 'debug', platforms: %i[mri windows], require: 'debug/prelude'
-  gem 'guard', '~> 2.18.0'            # 追加(3.6)
+  gem 'guard', '~> 2.19.1'            # 追加(3.6)
   gem 'guard-minitest', '~> 2.4.6'    # 追加(3.6)
   gem 'minitest-reporters', '~> 1.6.0' # 追加(3.6)
   gem 'brakeman', require: false
